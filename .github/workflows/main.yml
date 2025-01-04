@@ -34,6 +34,7 @@ jobs:
 
   Docker_Deploy:
     runs-on: ubuntu-latest
+    needs : build-and-push
 
     steps:
       # Log in to Docker Hub
